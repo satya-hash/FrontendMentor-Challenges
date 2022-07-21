@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Montserrat:wght@100&family=Poppins:wght@300&display=swap);
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Epilogue', sans-serif;
+}
+
+body {
+     background-color: #fff;
+}
+
+header {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 18px 24px;
+     height: 64px;
+     gap: 10px;
+     font-weight: 100;
+     color: #696969;
+}
+
+header .logo {
+     margin-right: 24px;
+}
+
+header .navkeys {
+     list-style-type: none;
+}
+
+header .navkeys li,
+header nav,
+main {
+     display: flex;
+     justify-content: center;
+}
+
+header .navkeys li {
+     margin: 4px;
+     padding: 8px;
+     align-items: center;
+     gap: .25rem;
+     position: relative;
+}
+
+header nav {
+     justify-content: space-between;
+     width: 100%;
+     
+}
+
+header .navkeys,
+nav .btn {
+     display: flex;
+     gap: 1.25rem;
+}
+
+nav span {
+     padding: 8px 16px;
+     border-radius: 10px;
+}
+
+header .navkeys li:hover .drop-content,
+nav span:hover {
+     color: #141414;
+     font-weight: 500;
+     cursor: pointer;
+     display: block;
+}
+
+header .navkeys li:hover {
+     color: #141414;
+     font-weight: 500;
+     cursor: pointer;
+}
+
+
+.menu {
+     display: none;
+}
+
+.btn .register-btn {
+     border: 2px solid #141414;
+}
+
+.btn .register-btn:hover {
+     color: #fafafa;
+     background-color: #141414;
+}
+
+main p {
+     font-size: 18px;
+     color: #696969;
+}
+
+main {
+     display: flex;
+     gap: 6em;
+     padding: 1em 7em;
+     height: 90vh;
+}
+
+.container,
+.content {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     height: 100%;
+}
+
+.container,
+header nav,
+main {
+     align-items: center;
+}
+
+.container {
+     width: calc(100%/2);
+     padding: 3rem;
+}
+
+.container h1 {
+     font-size: 5em;
+}
+
+.content {
+     align-items: flex-start;
+     column-gap: 2em;
+}
+
+.more {
+     padding: 0 24px;
+     height: 50px;
+     border-radius: 10px;
+     background-color: #141414;
+     color: #fafafa;
+     font-size: 16px;
+}
+
+.more:hover {
+     cursor: pointer;
+}
+
+.picture {
+     width: calc(100%/2);
+     background-image: url(./images/image-hero-desktop.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position-x: center;
+     height: 100%;
+}
+
+.brands {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin-top: 3rem;
+}
+.feature{
+     position: relative;
+     display: inline-flex;
+}
+.feature:hover .upArrow{
+     transform: rotate(180deg);
+}
+
+.drop-content {
+     position: absolute;
+     display: none;
+     left: 0;
+     top: 90%;
+     background-color: #fff;
+     min-width: 150px;
+     padding: 8px;
+     border-radius: 10px;
+     -webkit-box-shadow: 0 5px 10px -1px #a3a3a3;
+     -moz-box-shadow: 0 5px 10px -1px #b1b1b1;
+     box-shadow: 0 5px 10px -1px #707070;
+}
+.drop-content li{
+     text-align: left;
+     align-items: flex-start;
+}
+.drop-content li:hover{
+     padding-left: 5px;
+}
+
+
+
+@media screen and (max-width:768px) {
+     main{
+          /* display: none; */
+          flex-direction:column-reverse;
+          padding: 0;
+          margin: 0;
+          gap: 0;
+          
+     }
+     main .picture{
+          width: 100%;
+          background-image: url(./images/image-hero-mobile.png);
+     }
+     main .container{
+          width: 100%;
+     }
+     main .container h1{
+          font-size: 36px;
+     }
+     .container .content{
+          width: 100%;
+          gap: 2rem;
+     }
+     header nav{
+          display: none;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-start;
+          position: absolute;
+          top: 0;
+          right: 10%;
+          height: 100%;
+          width: 200px;
+          padding: 16px;
+          background-color: #fff;
+     }
+     header nav li:hover .drop-content{
+          display: block;
+          z-index: 20;
+          background-color: #fff;
+     }
+     header .navkeys{
+          display: flex;
+          flex-direction: column;
+     }
+     
+     header .btn{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     .menu{
+          display: block;
+          float: right;
+     }
+     .brands{
+          gap: 1rem;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+}
