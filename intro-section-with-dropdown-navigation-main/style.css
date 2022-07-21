@@ -33,8 +33,8 @@ header .navkeys {
 header .navkeys li,
 header nav,
 main {
-     display: flex;
      justify-content: center;
+     display: flex;
 }
 
 header .navkeys li {
@@ -48,7 +48,12 @@ header .navkeys li {
 header nav {
      justify-content: space-between;
      width: 100%;
-     
+}
+
+main {
+     gap: 6em;
+     padding: 1em 7em;
+     height: 90vh;
 }
 
 header .navkeys,
@@ -76,7 +81,6 @@ header .navkeys li:hover {
      cursor: pointer;
 }
 
-
 .menu {
      display: none;
 }
@@ -93,13 +97,6 @@ header .navkeys li:hover {
 main p {
      font-size: 18px;
      color: #696969;
-}
-
-main {
-     display: flex;
-     gap: 6em;
-     padding: 1em 7em;
-     height: 90vh;
 }
 
 .container,
@@ -158,11 +155,13 @@ main {
      width: 100%;
      margin-top: 3rem;
 }
-.feature{
+
+.feature {
      position: relative;
      display: inline-flex;
 }
-.feature:hover .upArrow{
+
+.feature:hover .upArrow {
      transform: rotate(180deg);
 }
 
@@ -179,40 +178,43 @@ main {
      -moz-box-shadow: 0 5px 10px -1px #b1b1b1;
      box-shadow: 0 5px 10px -1px #707070;
 }
-.drop-content li{
+
+.drop-content li {
      text-align: left;
      align-items: flex-start;
 }
-.drop-content li:hover{
+
+.drop-content li:hover {
      padding-left: 5px;
 }
 
-
-
 @media screen and (max-width:768px) {
-     main{
-          /* display: none; */
-          flex-direction:column-reverse;
+     main {
+          flex-direction: column-reverse;
           padding: 0;
           margin: 0;
           gap: 0;
-          
      }
-     main .picture{
+
+     main .picture {
           width: 100%;
           background-image: url(./images/image-hero-mobile.png);
      }
-     main .container{
+
+     main .container {
           width: 100%;
      }
-     main .container h1{
+
+     main .container h1 {
           font-size: 36px;
      }
-     .container .content{
+
+     .container .content {
           width: 100%;
           gap: 2rem;
      }
-     header nav{
+
+     header nav {
           display: none;
           flex-direction: column;
           align-items: flex-end;
@@ -225,34 +227,44 @@ main {
           padding: 16px;
           background-color: #fff;
      }
-     header nav li:hover .drop-content{
+
+     header nav li:hover .drop-content {
           display: block;
           z-index: 20;
           background-color: #fff;
      }
-     header .navkeys{
+
+     header .navkeys {
           display: flex;
           flex-direction: column;
      }
-     
-     header .btn{
+
+     header,
+     header .btn {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
           align-items: center;
      }
-     header{
-          display: flex;
+
+     header .btn {
+          flex-direction: column;
+     }
+
+     header {
           justify-content: space-between;
-          align-items: center;
      }
-     .menu{
+
+     .menu {
           display: block;
           float: right;
      }
-     .brands{
+
+     .brands,
+     header .btn {
+          justify-content: center;
+     }
+
+     .brands {
           gap: 1rem;
           flex-wrap: wrap;
-          justify-content: center;
      }
 }
