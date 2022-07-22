@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Rubik:wght@300&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Rubik',sans-serif;
+}
+body{
+     background-color:  #0D1323;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-size: 18px;
+}
+.track{
+     height: 70%;
+     width:65%;
+     display: flex;
+     /* background-color: red; */
+     gap: 30px;
+     padding: 32px;
+}
+.user {
+     background-color: #1D204B;
+     border-radius: 25px;
+     display: flex;
+     flex-direction: column;
+     width: 250px;
+}
+
+.user .day {
+     list-style-type: none;
+     padding: 36px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.user .day li {
+     color: hsl(235, 45%, 61%);
+}
+
+
+
+.user .day li:hover {
+     color: #fff;
+     cursor: pointer;
+}
+
+.person img{
+     border: 3px solid #fff;
+     border-radius: 50%;
+     width: 40%;
+}
+.person{
+     background-color: #5746EA;
+     border-radius: 25px;
+     padding:  36px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     flex-grow: 1;
+     width: 250px;
+}
+.person h1{
+     font-size: 36px;
+     letter-spacing: 0.125em;
+     color: #fff;
+}
+.details{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     color: hsl(236, 100%, 87%);
+}
+.tracking{
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+     color: #fff;
+     gap: 25px;
+     flex-wrap: wrap;
+}
+.card{
+     position: relative;
+     width: 200px;
+}
+.front{
+     background-color: #1D204B;
+     position: absolute;
+     width: 100%;
+     height: 80%;
+     border-radius: 25px;
+     padding: 36px;
+     bottom: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+.front:hover{
+     background-color: #34397B;
+}
+.card .back{
+     border-radius: 25px;
+     position: absolute;
+     top: 0;
+     background-color: #FF8B64;
+     height: 100%;
+     width: 100%;
+     text-align: right;
+}
+.menu p,
+.menu svg{
+     font-size: 14px;
+}
+.menu {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.front h1{
+     font-size: 36px;
+}
+.front span{
+     font-size: 14px;
+     color: hsl(235, 45%, 61%);
+}
+
+@media screen and (max-width:1183px) {
+     .track {
+          height: 70%;
+     }
+
+     .card {
+          width: 185px;
+     }
+
+     .user .day {
+          padding: 20px 36px;
+     }
+}
+@media screen  and (max-width:768px){
+     .track{
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+          /* background-color: red; */
+     }
+     .tracking{
+          /* flex-direction: column; */
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          align-items: stretch;
+          justify-content: center;
+     }
+     .card{
+          width: 80%;
+          height: 80%;
+     }
+     .user{
+          margin: auto;
+          width: 80%;
+          display: flex;
+          z-index: 10;
+          justify-content: center;
+     }
+     .person{
+          width: 100%;
+     }
+     .hrs h1{
+          font-size: 28px;
+     }
+     .hrs span{
+          font-size: 12px;
+     }
+     .hrs{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+     }
+}
+
