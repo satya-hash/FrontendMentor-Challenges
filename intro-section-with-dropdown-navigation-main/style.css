@@ -250,6 +250,9 @@ main {
           display: block;
           float: right;
      }
+     .menu:hover{
+          cursor: pointer;
+     }
      .brands{
           gap: 1rem;
           flex-wrap: wrap;

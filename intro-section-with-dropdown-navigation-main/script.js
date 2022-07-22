@@ -8,15 +8,16 @@ let menuIcons = [
 ];
 let setMenuIcon = true
 menu.addEventListener('click', () => {
-     if (setIcon) {
+     if (setMenuIcon) {
           menu.innerHTML = menuIcons[1];
-          setIcon = false;
+          setMenuIcon = false;
           nav.style.display = 'flex';
      }
      else {
           menu.innerHTML = menuIcons[0];
-          setIcon = true;
+          setMenuIcon = true;
           nav.style.display = 'none';
 
      }
+     console.log(true);
 })
