@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+
+  <main>
+    <h3 class="title">splitter</h3>
+    <section>
+        <article>
+           <div class="inp">
+            <label for="bill">Bill</label><br>
+            <input type="text" name="bill" id="bill" placeholder="0" accept="number">
+           </div>
+           <div class="select_tip">
+            <p>Select Tip %</p>
+            <div class="btns">
+              <button value=5>5%</button>
+              <button value=10>10%</button>
+              <button value=15>15%</button>
+              <button value=25>25%</button>
+              <button value=50>50%</button>
+              <button value=''>Custom</button>
+            </div>
+           </div>
+           <div class="inp">
+            <label for="num">Number of People</label><br>
+            <input type="text" name="num" id="num" placeholder="0">
+           </div>
+           <button type="submit" class="submit">Submit</button>
+        </article>
+        <article>
+          <div class="calculation">
+            <div class="tip">
+              <div><h3>Tip Amount</h3><span>
+                <p>/ Person</p>
+              </span></div>
+              <h1 class="amount ">
+                0
+              </h1>
+            </div>
+            <div class="tip">
+              <div>
+                <h3>Total</h3><span>
+                  <p>/ Person</p>
+                </span>
+              </div>
+              <h1 class="amount ">
+                0
+              </h1>
+            </div>
+          </div>
+          <button type="reset" id="reset">RESET</button>
+        </article>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>  
+</body>
+</html>

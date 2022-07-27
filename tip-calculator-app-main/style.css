@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Space+Mono&display=swap);
+
+*,
+::after,
+::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Space Mono', sans-serif;
+}
+
+.btns,
+body {
+     display: flex;
+}
+
+body {
+     background-color: #c5e4e7;
+     color: #3a8087;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+}
+
+main .title {
+     letter-spacing: 2.5rem;
+     width: 250px;
+     word-break: break-all;
+     text-transform: uppercase;
+     margin: auto;
+}
+
+article,
+section {
+     padding: 2rem;
+     border-radius: 15px;
+     display: flex;
+}
+
+section {
+     flex-direction: row;
+     gap: 2rem;
+     background-color: #fff;
+}
+
+article {
+     width: 50%;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.btns {
+     flex-wrap: wrap;
+     gap: 10px;
+     margin: 15px auto;
+}
+
+.btns button {
+     outline: 0;
+     border: 0;
+     padding: 5px 1.5rem;
+     background-color: #00474b;
+     color: #fff;
+     font-size: 20px;
+     border-radius: 7px;
+}
+
+input {
+     text-align: right;
+     outline: 0;
+     border: 0;
+     padding: .5rem 1rem;
+     background-color: #f3f8fb;
+     color: #5a7773;
+     width: 100%;
+     margin: 1rem auto;
+}
+
+.btns button:last-child {
+     padding: 5px;
+     background-color: #f3f7fc;
+     color: #5a7773;
+}
+
+.btns button:hover {
+     background-color: #26c2ad;
+}
+
+.btns button:focus {
+     background-color: #3a8087;
+}
+
+article:nth-last-child(1) {
+     background-color: #00474b;
+     justify-content: space-between;
+}
+
+article:nth-last-child(1) button {
+     width: 100%;
+     padding: .7rem 2rem;
+     border-radius: 10px;
+     outline: 0;
+     border: 0;
+     background-color: #26c2ad;
+}
+
+article:nth-last-child(1) h1 {
+     color: #26c2ad;
+     font-size: 36px;
+}
+
+article button {
+     color: #fff;
+}
+
+.tip {
+     display: flex;
+     justify-content: space-between;
+     margin: 1em 0;
+}
+
+.submit {
+     width: 100%;
+     padding: .7rem 2rem;
+     border-radius: 10px;
+     outline: 0;
+     border: 0;
+     background-color: #26c2ad;
+}
+
+@media screen and (max-width:375px) {
+     main {
+          width: 95%;
+     }
+
+     main .title {
+          letter-spacing: 1rem;
+          width: 130px;
+     }
+
+     section {
+          flex-direction: column;
+     }
+
+     article {
+          width: 100%;
+     }
+
+     .btns {
+          gap: 10px;
+     }
+}
