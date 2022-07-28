@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Outfit&family=Poppins:wght@300&display=swap');
+*,::before,::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Josefin Sans',sans-serif;
+}
+
+body{
+     width: 100%; 
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+}
+section{
+     height: 600px;
+     width: 70vw;
+     display: flex;
+     justify-content: space-between;
+}
+.details{
+     background-image: url(./images/bg-pattern-desktop.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;  
+     padding: 3rem 5rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 50%;
+}
+
+.details h1{
+     margin-bottom: 1rem;
+     font-size: 3rem;
+     font-weight: 300;
+     letter-spacing: .7rem;
+     text-transform: uppercase;
+}
+.details span,
+.details p,
+::placeholder{
+     color: #F4ADAD;
+     line-height: 2rem;
+     font-size: 16px;
+     margin-bottom: 1rem;
+}
+.picture{
+     background-image: url(./images/hero-desktop.jpg);
+     width: 50%;
+}
+.details #email{
+     width: 80%;
+     border-radius: 2rem;
+     padding: 16px 18px;
+     outline: none;
+     border: none;
+}
+form {
+     border: 1px solid #F4ADAD;
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 25px;
+     align-items: center;
+}
+form input[type='email']:invalid{
+     background-image: url(./images/icon-error.svg);
+     background-repeat: no-repeat;
+     background-position: center right;
+}
+
+
+.details button{
+    padding: 12px 30px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+     background: #ee8c8c;
+     background: -webkit-linear-gradient(135deg, #ee8c8c 0%, #f8bfbf 100%);
+     background: linear-gradient(135deg, #ee8c8c 0%, #f8bfbf 100%);
+}
+.details button:hover {
+     padding: 12px 32px 12px 32px;
+}
+
+@media screen  and (max-width:375px){
+     section{
+          flex-direction: column-reverse;
+          width: 100%;
+          height: 90vh;
+          margin: auto;
+          position: relative;
+     }
+     .details{
+          padding: 5px 10px;
+          text-align: center;
+          width: 100%;
+          background-image: unset;
+     }
+     .logo{
+          position: absolute;
+          top: 20px;
+     }
+     .picture{
+          background-image: url(./images/hero-mobile.jpg);
+          width: 100%;
+          background-repeat: no-repeat;
+          height: 100%;
+          margin: 5rem 0 3rem 0;
+     }
+     
+}
+@media screen 
+and (max-width:768px)
+and (min-width:376px) {
+     section{
+          height: max-content;
+          width: 80%;
+          margin: auto;
+     }
+     .details{
+          padding:  16px;
+          width: 50%;
+     }
+     .details h1{
+          font-size: 1.7rem;
+     }
+     .details p{
+          line-height: 1.5rem;
+     }
+     form{
+          width: 100%;
+     }
+     .details #email{
+          font-size: 18px;
+          padding: 10px 16px;
+          width: 100%;
+     }
+     .logo{
+          margin-bottom: 1rem;
+     }
+     .picture{
+          width: 50%;
+          background-size: cover;
+          background-repeat: no-repeat;
+     }
+}
