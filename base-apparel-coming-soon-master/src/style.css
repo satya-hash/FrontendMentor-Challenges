@@ -21,7 +21,7 @@ section{
      justify-content: space-between;
 }
 .details{
-     background-image: url(./images/bg-pattern-desktop.svg);
+     background-image: url(../images/bg-pattern-desktop.svg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;  
@@ -48,7 +48,7 @@ section{
      margin-bottom: 1rem;
 }
 .picture{
-     background-image: url(./images/hero-desktop.jpg);
+     background-image: url(../images/hero-desktop.jpg);
      width: 50%;
 }
 .details #email{
@@ -67,7 +67,7 @@ form {
      align-items: center;
 }
 form input[type='email']:invalid{
-     background-image: url(./images/icon-error.svg);
+     background-image: url(../images/icon-error.svg);
      background-repeat: no-repeat;
      background-position: center right;
 }
@@ -105,7 +105,7 @@ form input[type='email']:invalid{
           top: 20px;
      }
      .picture{
-          background-image: url(./images/hero-mobile.jpg);
+          background-image: url(../images/hero-mobile.jpg);
           width: 100%;
           background-repeat: no-repeat;
           height: 100%;
